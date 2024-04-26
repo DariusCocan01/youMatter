@@ -15,7 +15,10 @@
       "**/*"
     ],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "infoPlist": {
+        "NSDocumentPickerUsageDescription": "We need access to your files for uploading documents"
+      }
     },
     "android": {
       "adaptiveIcon": {
@@ -23,6 +26,7 @@
         "backgroundColor": "#ffffff"
       }
     },
+    "permissions": ["READ_EXTERNAL_STORAGE", "WRITE_EXTERNAL_STORAGE"],
     "web": {
       "favicon": "./assets/favicon.png"
     }
