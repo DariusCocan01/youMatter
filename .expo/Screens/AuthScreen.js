@@ -77,7 +77,7 @@ const styles = StyleSheet.create({
     },
     backgroundImage: {
       flex: 1,
-      resizeMode: 'cover', // sau 'stretch' sau 'contain'
+      resizeMode: 'cover',
       justifyContent: 'center',
       alignItems: 'center',
     },

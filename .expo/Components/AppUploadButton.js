@@ -17,7 +17,7 @@ function AppUploadButton({ description, selectedImagesToPick, onImageChange }) {
   
         if (!result.cancelled) {
           setSelectedImages((prevImages) => [...prevImages, result.uri]);
-          //console.log(result.uri);
+          
         }
       } catch (error) {
         console.error('Error picking image:', error);

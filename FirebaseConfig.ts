@@ -4,7 +4,7 @@ import { initializeApp } from "firebase/app";
 // https://firebase.google.com/docs/web/setup#available-libraries
 import {getAuth} from "firebase/auth";
 
-// Your web app's Firebase configuration
+
 const firebaseConfig = {
   apiKey: "AIzaSyAsK0j0ezalAS1lhbYCICzpDKnnpOnClQ8",
   authDomain: "rnauth-a0d57.firebaseapp.com",
@@ -14,6 +14,6 @@ const firebaseConfig = {
   appId: "1:254619080949:web:cbad8585f7abf4392c0dbc"
 };
 
-// Initialize Firebase
+
 export const FIREBASE_APP = initializeApp(firebaseConfig);
 export const FIREBASE_AUTH = getAuth(FIREBASE_APP);

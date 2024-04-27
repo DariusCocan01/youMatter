@@ -25,9 +25,7 @@ const RegistrationScreen = ({ navigation }) => {
     const [password, setPassword] = useState();
     const [confirmPassword, setConfirmPassword] = useState();
     const [verification, setVerification] = useState(true);
-    // const goToRegistrationScreen2 = () => {
-    //   navigation.navigate('RegistrationScreen2');
-    // };
+    
     const goToRegistrationScreen2 = () => {
       if (isValidEmail(emailAddress)&& isValidPhoneNumber(phoneNumber) && password ===confirmPassword && minimumCharactersPassword(password) && checkForSpaces(password)&& containsSpecialCharacter(password) && containsNumber(password)) {
         navigation.navigate('RegistrationScreen2', {

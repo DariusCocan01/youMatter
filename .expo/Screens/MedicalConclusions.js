@@ -169,7 +169,7 @@ const MedicalConclusions = ({ route,navigation }) => {
   };
 
   const handlePayPress = async () => {
-    //1.Gather the customer's billing information (e.g., email)
+    
     if (!cardDetails?.complete || !email) {
       Alert.alert("Please enter Complete card details and Email");
       return;
@@ -177,10 +177,8 @@ const MedicalConclusions = ({ route,navigation }) => {
     const billingDetails = {
       email: email,
     };
-    //2.Fetch the intent client secret from the backend
     try {
       const { clientSecret, error } = await fetchPaymentIntentClientSecret();
-      //2. confirm the payment
       if (error) {
         console.log("Unable to process payment");
       } else {
@@ -200,7 +198,6 @@ const MedicalConclusions = ({ route,navigation }) => {
     } catch (e) {
       console.log(e);
     }
-    //3.Confirm the payment with the card details
   };
     return (
     <View style={styles.container}>

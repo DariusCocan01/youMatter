@@ -39,48 +39,48 @@ const MedicalSymptomps = ({ route,navigation }) => {
             { label: "Skull", value: "skull" }
           ],
         neck: [
-            { label: "Throat", value: "throat" }, // Gât
-            { label: "Nape", value: "nape" }, // Ceafă
-            { label: "Cervical spine", value: "cervical_spine" }, // Coloana cervicală
-            { label: "Lymph nodes", value: "lymph_nodes" }, // Ganglionii limfatici
+            { label: "Throat", value: "throat" }, 
+            { label: "Nape", value: "nape" },
+            { label: "Cervical spine", value: "cervical_spine" },
+            { label: "Lymph nodes", value: "lymph_nodes" },
           ],
         body: [
-            { label: "Chest", value: "chest" }, // Piept
-            { label: "Abdomen", value: "abdomen" }, // Abdomen
-            { label: "Back", value: "back" }, // Spate
-            { label: "Pelvis", value: "pelvis" }, // Pelvis
-            { label: "Shoulders", value: "shoulders" }, // Umeri
+            { label: "Chest", value: "chest" },
+            { label: "Abdomen", value: "abdomen" },
+            { label: "Back", value: "back" },
+            { label: "Pelvis", value: "pelvis" },
+            { label: "Shoulders", value: "shoulders" },
           ],
         hands: [
-            { label: "Fingers", value: "fingers" }, // Degete
-            { label: "Palms", value: "palms" }, // Palme
-            { label: "Wrists", value: "wrists" }, // Încheieturi
-            { label: "Forearms", value: "forearms" }, // Antebrațe
-            { label: "Elbows", value: "elbows" }, // Coate
-            { label: "Upper arms", value: "upper_arms" }, // Brațe (partea superioară)
+            { label: "Fingers", value: "fingers" },
+            { label: "Palms", value: "palms" },
+            { label: "Wrists", value: "wrists" },
+            { label: "Forearms", value: "forearms" },
+            { label: "Elbows", value: "elbows" },
+            { label: "Upper arms", value: "upper_arms" },
           ],
         legs: [
-            { label: "Thighs", value: "thighs" }, // Coapse
-            { label: "Knees", value: "knees" }, // Genunchi
-            { label: "Calves", value: "calves" }, // Gamba
-            { label: "Ankles", value: "ankles" }, // Gleznă
-            { label: "Toes", value: "toes" }, // Degete de la picioare
+            { label: "Thighs", value: "thighs" },
+            { label: "Knees", value: "knees" },
+            { label: "Calves", value: "calves" },
+            { label: "Ankles", value: "ankles" },
+            { label: "Toes", value: "toes" },
           ],
         mouth: [
-            { label: "Teeth", value: "teeth" }, // Dinți
-            { label: "Gums", value: "gums" }, // Gingii
-            { label: "Tongue", value: "tongue" }, // Limbă
-            { label: "Inner cheeks", value: "inner_cheeks" }, // Obraji (interior)
-            { label: "Lips", value: "lips" }, // Buze
-            { label: "Tonsils", value: "tonsils" }, // Amigdale
+            { label: "Teeth", value: "teeth" },
+            { label: "Gums", value: "gums" },
+            { label: "Tongue", value: "tongue" },
+            { label: "Inner cheeks", value: "inner_cheeks" },
+            { label: "Lips", value: "lips" },
+            { label: "Tonsils", value: "tonsils" },
         ],
         skull: [
-            { label: "Frontal Region", value: "frontal" }, // Regiunea Frontală
-            { label: "Temporal Region", value: "temporal" }, // Regiunea Temporală
-            { label: "Occipital Region", value: "occipital" }, // Regiunea Occipitală
-            { label: "Parietal Region", value: "parietal" }, // Regiunea Parietală
-            { label: "Orbital/Sinus Area", value: "orbital_sinus" }, // Zona Orbitelor/Sinusurilor
-            { label: "Cervicogenic Headache", value: "cervicogenic" }, // Cefaleea Cervicogenă
+            { label: "Frontal Region", value: "frontal" },
+            { label: "Temporal Region", value: "temporal" },
+            { label: "Occipital Region", value: "occipital" },
+            { label: "Parietal Region", value: "parietal" },
+            { label: "Orbital/Sinus Area", value: "orbital_sinus" },
+            { label: "Cervicogenic Headache", value: "cervicogenic" },
           ],
         injuired:[
             {label:"Yes", value:"yes"},

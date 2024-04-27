@@ -128,11 +128,9 @@ const RegistrationScreen2 = ({route, navigation}) => {
           uploadedImageURLs.push(downloadURL);
         } catch (error) {
           console.error("Eroare la încărcarea imaginii:", error);
-          //throw error;
+          
         }
       }
-    
-      //return uploadedImageURLs; 
     };
     
     return (

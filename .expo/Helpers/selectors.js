@@ -6,7 +6,6 @@ const getFontFamily = (fontFamilyAndroid, fontFamilyIOS) => {
   } else if (Platform.OS === 'ios') {
     return fontFamilyIOS;
   } else {
-    // În cazul altor platforme, poți reveni la un font implicit sau să adaugi logica specifică
     return fontFamilyAndroid;
   }
 };

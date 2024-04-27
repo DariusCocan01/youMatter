@@ -13,8 +13,8 @@ const MainScreen = ({ route,navigation }) => {
   };
   const goToTestMap = () => {
     navigation.navigate('TestMap', {
-      destinationLatitude: 45.7478, // Înlocuiește cu valoarea dorită
-      destinationLongitude: 21.2314, // Înlocuiește cu valoarea dorită
+      destinationLatitude: 45.7478, 
+      destinationLongitude: 21.2314,
     });
   };
   const goToWork = () => {
@@ -132,7 +132,7 @@ const goToTest = () => {
       ),
     });
   }, [navigation, name]);
-  //opening screen effect
+  
   const [isReady, setIsReady] = useState(false);
   useEffect(() => {
     navigation.setOptions({ headerShown: false });
@@ -155,7 +155,7 @@ const goToTest = () => {
 
 
   const handleShowTip = () => {
-    setShowTip(true);  // Setează direct `showTip` la `true` de fiecare dată
+    setShowTip(true);
   };
     
     return (

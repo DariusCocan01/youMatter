@@ -29,7 +29,7 @@ class TestMap extends React.Component {
     onPressButton = async () => {
       const db = getFirestore();
       const collectionName = "CurrentWork";
-      const { latitude: targetLatitude, longitude: targetLongitude } = this.state.destination; // Extrage valorile corect
+      const { latitude: targetLatitude, longitude: targetLongitude } = this.state.destination;
     
       if (!targetLatitude || !targetLongitude) {
         console.error("Latitudinea sau longitudinea sunt undefined.");
@@ -92,7 +92,7 @@ class TestMap extends React.Component {
       const newCoordinate = { latitude, longitude };
 
       let newRouteCoordinates = routeCoordinates.concat([newCoordinate]);
-      if (newRouteCoordinates.length === 1) { // Dacă este prima actualizare, adaugă și destinația la ruta
+      if (newRouteCoordinates.length === 1) { 
         newRouteCoordinates.push(destination);
       }
 
@@ -100,7 +100,7 @@ class TestMap extends React.Component {
         latitude,
         longitude,
         routeCoordinates: newRouteCoordinates,
-        distanceTravelled: haversine(prevLatLng, destination, {unit: 'meter'}) / 1000, // Convertirea în kilometri
+        distanceTravelled: haversine(prevLatLng, destination, {unit: 'meter'}) / 1000,
         prevLatLng: newCoordinate,
       });
     };
@@ -143,11 +143,11 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: "flex-start",
     alignItems: "center",
-    paddingTop: Platform.OS === "android" ? 25 : 0, // Pentru a evita intrarea în bara de statut pe Android
+    paddingTop: Platform.OS === "android" ? 25 : 0,
   },
   map: {
     width: '100%',
-    height: '80%' // Harta va ocupa 90% din înălțimea containerului
+    height: '80%'
   },
   bubble: {
     backgroundColor: "rgba(255,255,255,0.7)",
@@ -162,10 +162,10 @@ const styles = StyleSheet.create({
     marginHorizontal: 10,
   },
   buttonContainer: {
-    width: '100%', // Asigură-te că butonul este pe toată lățimea ecranului
-    height: '10%', // Butonul și spațiul său ocupă restul de 10%
+    width: '100%',
+    height: '10%',
     justifyContent: 'center',
-    alignItems: 'center', // Centrarea butonului în containerul său
+    alignItems: 'center',
     backgroundColor: '#0000ff'
   },
 });
